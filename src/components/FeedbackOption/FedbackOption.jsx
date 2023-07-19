@@ -9,9 +9,9 @@ import {
 } from './FeedbackOption.styled';
 
 const icons = {
-  good: <GoodIcon />,
-  neutral: <NeutralIcon />,
-  bad: <BadIcon />,
+  Good: <GoodIcon />,
+  Neutral: <NeutralIcon />,
+  Bad: <BadIcon />,
 };
 
 export function FeedbackOption({ options, onLeaveFeedback }) {

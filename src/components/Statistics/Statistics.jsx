@@ -25,10 +25,10 @@ export function Statistics({ good, neutral, bad, total, positivePercentage }) {
           <Text>Bad: {bad}</Text>
         </ListItem>
       </List>
-      <TotalText>Total: {total()}</TotalText>
+      <TotalText>Total: {total}</TotalText>
       <PercentText>
         <Icon />
-        Pozitive feedback: {positivePercentage()}%
+        Pozitive feedback: {positivePercentage}%
       </PercentText>
     </div>
   );
@@ -37,6 +37,6 @@ Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
-  positivePercentage: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
